@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /home/william/git/pcb/tda7294-appnote/tda7294.sch)
-    (date "Sun 14 Nov 2021 08:17:47 PM ACDT")
+    (source /home/william/git/pcb/tda7294-appnote/tda7293.sch)
+    (date "Sun 14 Nov 2021 11:46:32 PM ACDT")
     (tool "Eeschema 5.1.5+dfsg1-2build2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -9,7 +9,7 @@
         (company)
         (rev)
         (date)
-        (source tda7294.sch)
+        (source tda7293.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
