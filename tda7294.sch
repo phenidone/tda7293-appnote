@@ -981,17 +981,6 @@ Wire Wire Line
 Connection ~ 6750 3700
 Text Notes 5850 1450 0    50   ~ 0
 Alt Footprints\nfor 22u/50V\nelectrolytics
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 61EC7F7C
-P 9200 2300
-F 0 "JP1" V 9154 2348 50  0000 L CNN
-F 1 "Jumper_NO_Small" V 9245 2348 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 9200 2300 50  0001 C CNN
-F 3 "~" H 9200 2300 50  0001 C CNN
-	1    9200 2300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9200 2100 9200 2200
 Connection ~ 9200 2100
@@ -1002,17 +991,6 @@ Wire Wire Line
 Wire Wire Line
 	9200 2600 8950 2600
 Connection ~ 8950 2600
-$Comp
-L Device:Jumper_NO_Small JP2
-U 1 1 61EEC3A9
-P 9200 4250
-F 0 "JP2" V 9154 4298 50  0000 L CNN
-F 1 "Jumper_NO_Small" V 9245 4298 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 9200 4250 50  0001 C CNN
-F 3 "~" H 9200 4250 50  0001 C CNN
-	1    9200 4250
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9200 4150 9200 4000
 Connection ~ 9200 4000
