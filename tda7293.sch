@@ -602,8 +602,6 @@ F 3 "~" H 2400 3400 50  0001 C CNN
 	1    2400 3400
 	-1   0    0    1   
 $EndComp
-Text Label 2500 3200 0    50   ~ 0
-5V
 $Comp
 L Device:R R11
 U 1 1 6190F980
@@ -641,8 +639,6 @@ F 3 "~" H 3000 4000 50  0001 C CNN
 	1    3000 4000
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2750 3800 2750 3850
 Wire Wire Line
 	2750 4000 2850 4000
 $Comp
@@ -744,10 +740,10 @@ Wire Wire Line
 Connection ~ 2600 7100
 Connection ~ 2250 7100
 Wire Wire Line
-	3000 6100 3800 6100
+	3000 6100 3300 6100
 Connection ~ 3000 6100
 Wire Wire Line
-	3000 6600 3800 6600
+	3000 6600 3300 6600
 $Comp
 L wbt-device:TDA7293 U1
 U 1 1 61B90497
@@ -909,8 +905,6 @@ Wire Wire Line
 Connection ~ 8100 2200
 Wire Wire Line
 	8100 2200 8300 2200
-Text Notes 5200 1450 0    50   ~ 0
-Alt Footprints\nfor 22u/50V\nelectrolytics
 Wire Wire Line
 	9200 2100 9200 2200
 Wire Wire Line
@@ -925,7 +919,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 4350 9200 4500
 Connection ~ 8300 4500
-Text Notes 8250 3850 0    50   ~ 0
+Text Notes 8950 1950 0    50   ~ 0
 Close jumpers\nfor TDA7294
 Wire Wire Line
 	3400 4000 3400 4150
@@ -946,25 +940,8 @@ Wire Wire Line
 	6350 2300 6350 2400
 Wire Wire Line
 	6350 4200 6350 4300
-$Comp
-L Device:Jumper_NO_Small JP3
-U 1 1 61F9C8CB
-P 2250 3000
-F 0 "JP3" H 2250 2815 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 2250 2906 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 2250 3000 50  0001 C CNN
-F 3 "~" H 2250 3000 50  0001 C CNN
-	1    2250 3000
-	-1   0    0    1   
-$EndComp
 Text Notes 3100 3600 0    50   ~ 0
 or AO3401 etc
-Wire Wire Line
-	2350 3000 2850 3000
-Wire Wire Line
-	2150 3000 1800 3000
-Text Label 1850 3000 0    50   ~ 0
-VCC
 Wire Wire Line
 	2000 4650 2050 4650
 Wire Wire Line
@@ -1233,13 +1210,6 @@ $EndComp
 Wire Wire Line
 	2050 4000 2050 3950
 Wire Wire Line
-	2750 3850 2850 3850
-Wire Wire Line
-	2850 3850 2850 3000
-Connection ~ 2750 3850
-Wire Wire Line
-	2750 3850 2750 4000
-Wire Wire Line
 	2050 3650 2050 3200
 Wire Wire Line
 	2050 3200 2400 3200
@@ -1298,4 +1268,49 @@ Wire Wire Line
 	1300 5900 1850 5900
 Wire Wire Line
 	1300 6550 1300 6600
+Text Label 2500 3200 0    50   ~ 0
+5V
+Wire Wire Line
+	2750 3800 2750 4000
+Text Notes 8100 2000 0    50   ~ 0
+alt footprints\nfor MLCC or\nelectrolytic
+$Comp
+L Device:R R17
+U 1 1 61D28AD4
+P 3300 6350
+F 0 "R17" V 3093 6350 50  0000 C CNN
+F 1 "27k" V 3184 6350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3230 6350 50  0001 C CNN
+F 3 "~" H 3300 6350 50  0001 C CNN
+	1    3300 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 61D38B3B
+P 3300 6850
+F 0 "R18" V 3093 6850 50  0000 C CNN
+F 1 "27k" V 3184 6850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3230 6850 50  0001 C CNN
+F 3 "~" H 3300 6850 50  0001 C CNN
+	1    3300 6850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 6500 3300 6600
+Connection ~ 3300 6600
+Wire Wire Line
+	3300 6600 3800 6600
+Wire Wire Line
+	3300 6600 3300 6700
+Wire Wire Line
+	3300 7000 3300 7100
+Wire Wire Line
+	3300 7100 3000 7100
+Connection ~ 3000 7100
+Wire Wire Line
+	3300 6100 3300 6200
+Connection ~ 3300 6100
+Wire Wire Line
+	3300 6100 3800 6100
 $EndSCHEMATC
