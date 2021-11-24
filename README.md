@@ -37,10 +37,10 @@ lights with the UNMUTE signal is asserted.  No clip indication LEDs are offered.
 
 ## TDA7294
 
-To use the board with a TDA7294, it is necessary to short between pins 12 and 14
-of each amplifier, as indicated by a line on the rear silk-screen.  Failure
-to provide this short will mean the bootstrap capacitor does not operate, and
-the signal will have positive peaks clipped at higher power levels.
+The board charges the bootstrap capacitor from the OUTPUT pin rather than
+the BOOTLOAD pin, so this board will also work unmodified with a TDA7294.
+That limits the absolute-max supply voltage to 100V rather than 120V, but
+the appropriate level is 72V.
 
 ## License
 
