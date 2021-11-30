@@ -46,3 +46,7 @@ the appropriate level is 72V.
 
 This hardware design is (C) 2021 William Brodie-Tyrrell and is licensed under 
 the CERN OHL; see cern_ohl_v_1_2.pdf
+
+## TRL
+
+This PCB has been sent for manufacture but not yet assembled or tested.
